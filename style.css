@@ -1,0 +1,547 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.head {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url('./assets/pexels-oidonnyboy-4054069.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 25px 8%;
+    box-shadow: 0 5px 7px rgb(0, 0, 0);
+}
+
+/* navbar */
+
+nav {
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+nav .logo {
+    display: flex;
+    gap: 7px;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    text-shadow: 3px 3px 5px black;
+}
+
+nav .logo .img-logo {
+    width: 40px;
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    text-shadow: 3px 3px 5px black;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* navbar end */
+
+
+/* main section */
+
+main .container {
+    height: 500px;
+    padding: 130px 3%;
+}
+
+main .container h1 {
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 3px 3px 5px black;
+}
+
+main .container .btn-rent {
+    margin: 30px 1rem;
+}
+
+
+main .container .btn-rent .btn-in {
+    background-color: rgba(37, 18, 255, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px black;
+}
+
+.btn-rent .btn-in a {
+    color: white;
+    text-decoration: none;
+}
+
+main .container .btn-rent .btn-in:hover {
+    background-color: rgb(103, 90, 253);
+}
+
+main .container .btn-rent .btn-our {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 20px;
+    color: white;
+}
+
+main .container .btn-rent .btn-our p {
+    font-size: 25px;
+    text-shadow: 3px 3px 5px black;
+}
+
+main .container .btn-rent .btn-our .btn-scootes {
+    background-color: rgba(38, 18, 255, 0);
+    color: white;
+    border: 2px solid rgb(103, 90, 253);
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px black;
+}
+
+.container .btn-rent .btn-our .btn-scootes a {
+    color: white;
+    text-decoration: none;
+}
+
+main .container .btn-rent .btn-our .btn-scootes:hover {
+    background-color: rgb(103, 90, 253);
+}
+
+/* main section end */
+
+
+/* section how to rent */
+
+.how-to-rent {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    overflow-x: hidden;
+}
+
+.how-to-rent .img-vespa {
+    margin-top: 50px;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition:  0.6s ease-out, 0.6s ease-out;
+}
+
+.how-to-rent .img-vespa.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.how-to-rent .img-vespa img {
+    width: 600px;
+    height: 600px;
+    border-radius: 0 50px 50px 0;
+    object-fit: cover;
+    box-shadow: 3px 3px 5px rgb(122, 122, 122);
+}
+
+.how-to-rent .side-how {
+    margin-top: 50px;
+    width: 660px;
+}
+
+.how-to-rent .side-how h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 35px;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgb(203, 203, 203);
+}
+
+.how-to-rent .side-how .list-angka {
+    padding: 4rem 4rem;
+    width: 600px;
+}
+
+.how-to-rent .side-how .list-angka .list {
+    display: flex;
+    align-items: center;
+    width: 530px;
+    margin-bottom: 30px;
+    gap: 2rem;
+    opacity: 0;
+    transform: translateX(100px);
+    transition:  0.6s ease-out, 0.6s ease-out;
+}
+
+.how-to-rent .side-how .list-angka .list.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.how-to-rent .side-how .list-angka .list h2 {
+    font-size: 33px;
+    font-weight: 700;
+    text-shadow: 3px 3px 5px rgb(203, 203, 203);
+}
+
+.how-to-rent .side-how .list-angka .list button {
+    background-color: rgba(37, 18, 255, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+    box-shadow: 3px 3px 5px rgb(111, 111, 111);
+}
+
+.how-to-rent .side-how .list-angka img {
+    width: 80px;
+    height: 70px;
+}
+
+/* section how to rent end */
+
+
+/* card section */
+
+.card-section {
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+    padding: 80px 100px;
+}
+
+.card-section h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 55px;
+    text-shadow: 3px 3px 5px rgb(203, 203, 203);
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    gap: 70px 150px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: white;
+    width: 380px;
+    position: relative;
+    box-shadow: 2px 2px 5px black;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.6s ease-out, 0.6s ease-out;
+    margin-bottom: 50px;
+}
+
+.product-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 50px;
+}
+
+.product-tumb img {
+    width: 400px;
+    height: 300px;
+}
+
+.product-details {
+    padding: 30px;
+}
+
+.product-catagory {
+    display: block;
+    width: 300px;
+    height: 3px;
+    background-color: blue;
+    margin-bottom: 18px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.price .price-tag {
+    text-align: center;
+    font-weight: 500;
+}
+
+.price .price-tag .bot {
+    margin-bottom: 3px;
+}
+
+
+.product-details h4 {
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: black;
+    transition: 0.3s;
+}
+
+
+.product-details p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 18px;
+    color: black;
+}
+
+.product-bottom-details {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.button-book {
+    color: white;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 2px 2px 5px black;
+    background-color: rgba(0, 221, 22, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-book:hover {
+    background-color: rgb(147, 250, 158);
+}
+
+.product-bottom-details .button-book img {
+    margin-right: 5px;
+    height: 15px;
+}
+
+.product-bottom-details a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* card section end*/
+
+
+/* contact section */
+
+.contact-section {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url('./assets/background_footer.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 50px 5%;
+    /* box-shadow: 0 5px 7px rgb(0, 0, 0); */
+}
+
+.contact-section h1 {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    text-shadow: 3px 3px 5px black;
+}
+
+.contact-section .contact-container {
+    display: flex;
+    color: white;
+    gap: 1rem;
+    text-shadow: 3px 3px 5px black;
+} 
+
+.contact-container .contact-info {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition:  0.7s ease-out, 0.7s ease-out;
+}
+
+.contact-container .contact-info.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.contact-container .contact-info h3 {
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+.contact-info .contact-more-info {
+    padding: 50px 25px;
+}
+
+.contact-info .contact-more-info p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.contact-info .contact-more-info .contact-location {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    gap: 2rem;
+}
+
+.contact-info .contact-more-info .contact-location p {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact-info .contact-more-info .contact-location img {
+    box-shadow: 3px 3px 5px black;
+}
+
+.contact-info .contact-more-info .contact-phone {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 2rem;
+}
+
+.contact-info .contact-more-info .contact-phone p {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact-info .contact-more-info .contact-phone img {
+    box-shadow: 3px 3px 5px black;
+}
+
+.contact-info .contact-more-info .contact-message {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 2rem;
+}
+
+.contact-info .contact-more-info .contact-message p {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact-info .contact-more-info .contact-message img {
+    box-shadow: 3px 3px 5px black;
+}
+
+.map {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    padding: 25px 40px;
+    background-color: rgba(44, 44, 44, 1);
+}
+
+.footer .logo-footer {
+    color: white;
+    display: flex;
+    margin-left: 10px;
+    gap: 10px;
+}
+
+.footer .logo-footer h1 {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+
+.footer .logo-footer img {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-footer {
+    display: flex;
+    font-size: 17px;
+    margin-top: 4px;
+    margin-left: 200px;
+    gap: 10rem;
+}
+
+.navbar-footer p {
+    color: white;
+}
+
+.navbar-footer ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-footer ul li {
+    list-style: none;
+}
+
+.navbar-footer ul a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+.navbar-footer ul a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* contact section */
